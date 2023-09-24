@@ -72,7 +72,7 @@ a {
 
 a:hover {
     color: #fff;
-    font-weight: 700 !important;
+    font-weight: 750 !important;
 }
 
 b, strong {
@@ -83,6 +83,7 @@ b, strong {
 .text-headline {
     color: rgb(225, 228, 229);
     font-size: 6.5em;
+    font-weight: 900;
 }
 
 .text-subheadline {
