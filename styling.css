@@ -1,0 +1,124 @@
+
+/*
+    © Joey Smalen. All rights reserved.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #010510;
+    color: #fff;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 14px;
+    height: calc(100% + (var(--safe-area-inset-top) + var(--safe-area-inset-bottom)));
+    padding-top: constant(safe-area-inset-top);
+    padding-top: env(safe-area-inset-top);
+}
+
+/* Layout */
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 90vh;
+    overflow: hidden;
+    text-align: left;
+}
+
+.two-column {
+    position: inline;
+}
+
+.two-column > * {
+    width: 400px;
+}
+
+.two-column > :first-child {
+    float: left;
+}
+
+.two-column > :last-child {
+    float: right;
+}
+
+footer {
+    overflow: hidden;
+}
+
+footer > * {
+    bottom: 0;
+    font-size: 90%;
+    margin: 10px 20px;
+    position: absolute;
+}
+
+footer > *:last-child {
+    right: 0;
+}
+
+/* Style: basic */
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: ease-in 70ms;
+}
+
+a:hover {
+    color: #fff;
+    font-weight: 700 !important;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+/* Style: headline */
+.text-headline {
+    color: rgb(225, 228, 229);
+    font-size: 6.5em;
+}
+
+.text-subheadline {
+    color: rgb(114, 122, 126);
+    font-size: 1.6em;
+}
+
+.text-subtext {
+    color: rgb(100, 105, 116);
+}
+
+/* Style: footer entities */
+.entity {
+    font-weight: 300;
+}
+
+.entity-bold {
+    font-weight: 500;
+}
+
+/* Responsive */
+/* TODO: Fix responsivity */
+@media screen and (max-width: 600px) {
+    main {
+        min-height: 80vh;
+    }
+
+    main > img {
+        width: 90%;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    footer > *:last-child {
+        float: none;
+        text-align: right;
+    }
+}
