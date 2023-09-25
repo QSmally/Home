@@ -29,7 +29,6 @@ main {
     justify-content: center;
     min-height: 90vh;
     overflow: hidden;
-    text-align: left;
 }
 
 .two-column {
@@ -40,11 +39,11 @@ main {
     width: 400px;
 }
 
-.two-column > :first-child {
+.two-column > *:first-child {
     float: left;
 }
 
-.two-column > :last-child {
+.two-column > *:last-child {
     float: right;
 }
 
@@ -79,6 +78,14 @@ b, strong {
     font-weight: 600;
 }
 
+.content-center {
+    text-align: center;
+}
+
+.content-left {
+    text-align: left;
+}
+
 /* Style: headline */
 .text-headline {
     color: rgb(225, 228, 229);
@@ -87,12 +94,18 @@ b, strong {
 }
 
 .text-subheadline {
-    color: rgb(114, 122, 126);
+    color: rgb(116, 124, 128);
     font-size: 1.6em;
+    font-weight: 500;
 }
 
 .text-subtext {
     color: rgb(100, 105, 116);
+}
+
+/* Style: masks */
+.mask-36 {
+    border-radius: 36%;
 }
 
 /* Style: footer entities */
@@ -101,23 +114,35 @@ b, strong {
 }
 
 .entity-bold {
-    font-weight: 500;
+    font-weight: 475;
 }
 
 /* Responsive */
-/* TODO: Fix responsivity */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
+    .two-column > * {
+        width: 100%;
+    }
+
+    .text-headline, .text-subheadline, .text-subtext {
+        padding: 0 9vh;
+    }
+
     main {
         min-height: 80vh;
     }
 
-    main > img {
-        width: 90%;
-        margin: 5px;
+    main img {
+        height: 24vh;
+        width: auto;
     }
 }
 
 @media screen and (max-width: 425px) {
+    .two-column > * {
+        font-size: 80%;
+        padding: 2.5vh;
+    }
+
     footer > *:last-child {
         float: none;
         text-align: right;
