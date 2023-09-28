@@ -31,6 +31,10 @@ main {
     overflow: hidden;
 }
 
+main img {
+    width: 75%;
+}
+
 .two-column {
     position: inline;
 }
@@ -132,8 +136,7 @@ b, strong {
     }
 
     main img {
-        height: 24vh;
-        width: auto;
+        width: 35%;
     }
 }
 
