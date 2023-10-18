@@ -35,12 +35,12 @@ main img {
     width: 75%;
 }
 
-.two-column {
-    position: inline;
+.content {
+    width: 400px;
 }
 
-.two-column > * {
-    width: 400px;
+.two-column {
+    position: inline;
 }
 
 .two-column > *:first-child {
@@ -107,6 +107,10 @@ b, strong {
     color: rgb(100, 105, 116);
 }
 
+.text-body {
+    padding-top: 24px;
+}
+
 /* Style: masks */
 .mask-36 {
     border-radius: 36%;
@@ -123,11 +127,11 @@ b, strong {
 
 /* Responsive */
 @media screen and (max-width: 800px) {
-    .two-column > * {
+    .content {
         width: 100%;
     }
 
-    .text-headline, .text-subheadline, .text-subtext {
+    .text-headline, .text-subheadline, .text-subtext, .text-body {
         padding: 0 9vh;
     }
 
@@ -141,7 +145,7 @@ b, strong {
 }
 
 @media screen and (max-width: 425px) {
-    .two-column > * {
+    .content {
         font-size: 80%;
         padding: 2.5vh;
     }
