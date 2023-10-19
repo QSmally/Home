@@ -43,12 +43,8 @@ main img {
     position: inline;
 }
 
-.two-column > *:first-child {
+.two-column > * {
     float: left;
-}
-
-.two-column > *:last-child {
-    float: right;
 }
 
 footer {
@@ -132,7 +128,7 @@ b, strong {
     }
 
     .text-headline, .text-subheadline, .text-subtext, .text-body {
-        padding: 0 9vh;
+        padding: inherit 9vh;
     }
 
     main {
