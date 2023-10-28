@@ -93,6 +93,12 @@ b, strong {
     font-weight: 900;
 }
 
+.text-headline-2 {
+    color: rgb(225, 228, 229);
+    font-size: 4.4em;
+    font-weight: 750;
+}
+
 .text-subheadline {
     color: rgb(116, 124, 128);
     font-size: 1.6em;
@@ -127,8 +133,13 @@ b, strong {
         width: 100%;
     }
 
-    .text-headline, .text-subheadline, .text-subtext, .text-body {
-        padding: inherit 9vh;
+    .text-headline,
+    .text-headline-2,
+    .text-subheadline,
+    .text-subtext,
+    .text-body {
+        padding-left: 9vh;
+        padding-right: 9vh;
     }
 
     main {
