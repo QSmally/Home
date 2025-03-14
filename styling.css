@@ -37,11 +37,19 @@ main img {
 }
 
 .two-column {
-    position: inline;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.two-column > * {
-    float: left;
+.top {
+    align-items: flex-start;
+}
+
+.spacer {
+    height: 3em;
 }
 
 .content {
@@ -98,7 +106,7 @@ b, strong {
 
 .text-headline-2 {
     color: rgb(225, 228, 229);
-    font-size: 4.4em;
+    font-size: 3.5em;
     font-weight: 750;
 }
 
@@ -150,6 +158,10 @@ b, strong {
 
     main img {
         width: 35%;
+    }
+
+    .two-column {
+        flex-direction: column;
     }
 }
 
